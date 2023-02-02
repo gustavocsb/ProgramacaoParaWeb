@@ -1,2 +1,2 @@
 # JavaScript
-Exercícios básicos de JavaScript
+Exercícios básicos de JavaScript realizados no VSCode
