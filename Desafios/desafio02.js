@@ -43,6 +43,25 @@ if (matrizA[0].length != matrizB.length){
     for(i=0;i<matrizC.length;i++){
         console.log(matrizC[i]);
     }
+
+    let matrizForm = Array(matrizC.length);
+    for(i=0;i<matrizC.length;i++){
+        matrizForm[i] = Array(matrizC[i].length);
+        for(j=0;j<matrizC[i].length;j++){
+            let formulaMultiplicacao = '';
+            for(k=0;k<matrizA[0].length;k++){
+                formulaMultiplicacao+=`${matrizA[i][k]} x ${matrizB[k][j]}`;
+                if(k<matrizA[0].length - 1){
+                    formulaMultiplicacao+= ' + ';
+                }
+            }
+            matrizForm[i][j]=formulaMultiplicacao;
+        }
+    }
+
+    for(i=0;i<matrizForm.length;i++){
+        console.log(matrizForm[i]);
+    }
 }
 
 
